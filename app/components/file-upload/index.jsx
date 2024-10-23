@@ -58,6 +58,7 @@ const FileUpload = ({ username }) => {
         if (response.ok) {
             const result = await response.json();
             setUploadedFiles(result.uploadedFiles); // Set uploaded files
+            debugger
         } else {
             alert('Failed to fetch uploaded files');
         }
