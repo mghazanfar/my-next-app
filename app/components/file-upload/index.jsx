@@ -102,7 +102,7 @@ const FileUpload = ({ username }) => {
         )}
             <div {...getRootProps({ className: 'dropzone border-2 border-dashed border-gray-400 p-4 mb-4 text-center' })}>
                 <input {...getInputProps()} />
-                <p>Drag 'n' drop some files here, or click to select files</p>
+                <p>Drag and drop some files here, or click to select files</p>
             </div>
             <input
                 type="text"

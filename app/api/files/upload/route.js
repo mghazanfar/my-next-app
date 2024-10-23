@@ -30,7 +30,7 @@ export async function POST(req) {
     }
 
     // Construct a shareable link to the file details page
-    const shareableLink = `http://localhost:3000/files/${username}/${file.name}`;
+    const shareableLink = `https://herogram-next-fullstack-ghazanfar/files/${username}/${file.name}`;
 
 
     // Add the new file to the user's uploadedFiles
