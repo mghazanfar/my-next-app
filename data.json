@@ -1,0 +1,42 @@
+{
+  "users": [
+    {
+      "username": "user1",
+      "password": "1234",
+      "uploadedFiles": [
+        {
+          "name": "jakob-owens-YrsIR805qjg-unsplash.jpg",
+          "type": "image/jpeg",
+          "tags": "test tag",
+          "uploadedAt": "2024-10-23T09:43:42.662Z"
+        },
+        {
+          "name": "jonny-gios-TifDnxbR2iE-unsplash.jpg",
+          "type": "image/jpeg",
+          "tags": "share",
+          "uploadedAt": "2024-10-23T09:45:23.636Z",
+          "shareableLink": "http://localhost:3000/api/files/user1/jonny-gios-TifDnxbR2iE-unsplash.jpg"
+        },
+        {
+          "name": "jakob-owens-YrsIR805qjg-unsplash.jpg",
+          "type": "image/jpeg",
+          "tags": "shareed link",
+          "uploadedAt": "2024-10-23T09:50:20.422Z",
+          "shareableLink": "http://localhost:3000/files/user1/jakob-owens-YrsIR805qjg-unsplash.jpg"
+        },
+        {
+          "name": "steven-van-bTPP3jBnOb8-unsplash.jpg",
+          "type": "image/jpeg",
+          "tags": "test again",
+          "uploadedAt": "2024-10-23T10:12:56.128Z",
+          "shareableLink": "http://localhost:3000/files/user1/steven-van-bTPP3jBnOb8-unsplash.jpg"
+        }
+      ]
+    },
+    {
+      "username": "user2",
+      "password": "1234",
+      "uploadedFiles": []
+    }
+  ]
+}
