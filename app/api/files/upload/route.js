@@ -30,7 +30,7 @@ export async function POST(req) {
     }
 
     // Construct a shareable link to the file details page
-    const shareableLink = `https://6718d217d852a600085d2872--herogram-next-fullstack-ghazanfar.netlify.app/files/${username}/${file.name}`;
+    const shareableLink = `https://herogram-next-fullstack-ghazanfar.netlify.app/files/${username}/${file.name}`;
 
 
     // Add the new file to the user's uploadedFiles
