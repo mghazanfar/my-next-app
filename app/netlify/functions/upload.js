@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const dataPath = path.join(__dirname, '../../data.json'); // Adjust path accordingly
+const dataPath = path.join(__dirname, '../../data.json'); // Adjust path as needed
 
 exports.handler = async (event) => {
     if (event.httpMethod !== 'POST') {
@@ -12,8 +12,8 @@ exports.handler = async (event) => {
     }
 
     try {
-        const { username, file, tags } = JSON.parse(event.body);
-        const data = JSON.parse(fs.readFileSync(dataPath));
+        const { username, file, tags } = JSON.parse(event.body); // Ensure this matches your request body structure
+        const data = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
         const user = data.users.find(user => user.username === username);
 
         if (!user) {
@@ -42,7 +42,7 @@ exports.handler = async (event) => {
         console.error("Upload Error:", error);
         return {
             statusCode: 500,
-            body: JSON.stringify({ error: 'Internal Server Error' }),
+            body: JSON.stringify({ error: 'Internal Server Error', details: error.message }), // Include error message for debugging
         };
     }
 };

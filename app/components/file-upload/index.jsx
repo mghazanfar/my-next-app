@@ -24,7 +24,7 @@ const FileUpload = ({ username }) => {
         formData.append('file', files[0]); // For single file upload
         formData.append('tags', tags);
 
-        const response = await fetch('/api/files/upload', {
+        const response = await fetch('/.netlify/functions/upload', {
             method: 'POST',
             body: JSON.stringify({
                 username: 'user1', // Use the current logged-in username here
